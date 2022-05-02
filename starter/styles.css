@@ -237,6 +237,13 @@ body {
   align-content: center;
 }
 
+#pond {
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
+
 /* GRID  */
 #garden {
   display: grid;
