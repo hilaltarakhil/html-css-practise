@@ -230,6 +230,13 @@ body {
   align-content: flex-end;
 }
 
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
 /* GRID  */
 #garden {
   display: grid;
@@ -445,9 +452,27 @@ body {
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat();
 }
 
 #water {
   grid-column: 1;
   grid-row: 1;
+}
+
+#garden {
+  display: grid;
+  grid-template-columns: repeat(5, 12.5%);
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#garden {
+  display: grid;
+  grid-template-columns: 100px 3em 40%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
 }
