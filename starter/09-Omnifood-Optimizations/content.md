@@ -142,3 +142,9 @@ Privacy & terms
 - Pricing + features
 - CTA
 - Footer
+
+4 things to do for tomorrow
+1- prayer 5 times
+2- copywriting
+3- Udemy course
+4- exercize
