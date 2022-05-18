@@ -148,3 +148,6 @@ Privacy & terms
 2- copywriting
 3- Udemy course
 4- exercize
+
+manifist-starter
+index-final
