@@ -1,0 +1,8 @@
+* {
+  font-size: 16px #4d4e53;
+  padding: 10px 30px;
+}
+
+#navbar li {
+  border: 2px solid black;
+}
