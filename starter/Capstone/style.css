@@ -1,8 +1,17 @@
+html body {
+}
+
 * {
   font-size: 16px #4d4e53;
+  font-family: sans-serif;
   padding: 10px 30px;
 }
 
 #navbar li {
   border: 2px solid black;
+}
+
+article {
+  font-size: 16px #4d4e53;
+  font-family: sans-serif;
 }
