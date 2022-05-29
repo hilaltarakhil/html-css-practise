@@ -7,11 +7,6 @@ body {
   line-height: 1.5;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 100px auto;
-}
-
 #navbar {
   position: fixed;
   min-width: 290px;
@@ -20,7 +15,7 @@ body {
   width: 300px;
   height: 100%;
   border-right: solid;
-  overflow-y: scroll;
+  border-color: rgba(0, 22, 22, 0.4);
 }
 
 header {
@@ -39,6 +34,8 @@ header {
 #navbar ul {
   height: 88%;
   padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #navbar li {
@@ -86,4 +83,30 @@ codes {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    border: none;
+
+    /* border-bottom: 2px solid; */
+  }
+
+  #main-doc {
+    /* position: relative; */
+    margin-left: 0px;
+    margin-top: 270px;
+  }
 }
