@@ -151,3 +151,10 @@ Privacy & terms
 
 manifist-starter
 index-final
+
+tomoroow
+
+1-course
+2-meeting
+3-discord
+4-exerize
