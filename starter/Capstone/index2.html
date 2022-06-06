@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="style2.css" />
-    <title>Responsive Website!</title>
+    <title>taco website</title>
   </head>
 
   <body>
@@ -16,7 +13,7 @@
           <span class="close">×</span>
           Menu
         </button>
-        <ul id="menu-list">
+        <ul>
           <li>
             <a href="">Tacos</a>
           </li>
@@ -85,11 +82,7 @@
       </section>
 
       <section class="about">
-        <img
-          src="images/queso-taco.png"
-          alt="Yummy Taco"
-          class="about__mockup"
-        />
+        <img src="queso-taco.png" alt="Yummy Taco" class="about__mockup" />
         <div class="about__details">
           <h2>Featured Taco</h2>
           <p>Slim Profile, easy to hold and loaded with cheese.</p>
@@ -112,17 +105,5 @@
         <img src="https://source.unsplash.com/random/207x210" alt="" />
       </section>
     </div>
-
-    <script>
-      const navButton = document.querySelector("button[aria-expanded]");
-
-      function toggleNav({ target }) {
-        const expanded =
-          target.getAttribute("aria-expanded") === "true" || false;
-        navButton.setAttribute("aria-expanded", !expanded);
-      }
-
-      navButton.addEventListener("click", toggleNav);
-    </script>
   </body>
 </html>
