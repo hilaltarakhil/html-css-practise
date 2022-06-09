@@ -2,34 +2,51 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>taco website</title>
   </head>
 
   <body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
     <div class="wrapper">
       <nav class="menu">
-        <button aria-expanded="false" aria-controls="menu-list">
-          <span class="open">☰</span>
-          <span class="close">×</span>
-          Menu
-        </button>
-        <ul>
-          <li>
-            <a href="">Tacos</a>
-          </li>
-          <li>
-            <a href="">Beers</a>
-          </li>
-          <li>
-            <a href="">Wines</a>
-          </li>
-          <li>
-            <a href="">Desserts</a>
-          </li>
-          <li>
-            <a href="">Reservations</a>
-          </li>
-        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="mobile-container">
+          <div class="topnav">
+            <ul id="myLinks">
+              <li>
+                <a href="">Tacos</a>
+              </li>
+              <li>
+                <a href="">Beers</a>
+              </li>
+              <li>
+                <a href="">Wines</a>
+              </li>
+              <li>
+                <a href="">Desserts</a>
+              </li>
+              <li>
+                <a href="">Reservations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <div class="top">
         <header class="hero">

@@ -1,3 +1,27 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+}
+
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 body {
   font-size: 15px;
   background-image: url(/imgss/topography\ \(2\).svg),
@@ -89,8 +113,8 @@ img {
 .hero {
   grid-area: hero;
   min-height: 450px;
-  background: white url(images/taco.jpg);
-  background-image: url(/imgss/taco.jpeg);
+  /* background: white url(images/taco.jpg); */
+  background-image: url(/img/taco.jpg);
   background-size: cover;
   background-position: bottom right;
   padding: 55px;
