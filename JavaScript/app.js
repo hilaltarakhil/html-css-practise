@@ -29,6 +29,10 @@ console.log(tempArray.slice(1));
 
 console.log([...tempArray, ...anotherArray]);
 
+console.log(tempArray.slice(2));
+
+console.log(tempArray);
+
 // pop the first element out of the array
 
 //concat both arrays
