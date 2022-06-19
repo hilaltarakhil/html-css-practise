@@ -25,6 +25,8 @@ console.log(tempArray.concat(anotherArray));
 
 console.log(tempArray.reverse());
 
+console.log(tempArray.pop(1));
+
 console.log(tempArray.slice(1));
 
 console.log([...tempArray, ...anotherArray]);
@@ -32,6 +34,8 @@ console.log([...tempArray, ...anotherArray]);
 console.log(tempArray.slice(2));
 
 console.log(tempArray);
+
+console.log(tempArray.slice(3));
 
 // pop the first element out of the array
 
