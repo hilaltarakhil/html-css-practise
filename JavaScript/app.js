@@ -45,123 +45,170 @@
 
 // // remove the first element from an array using slice
 
-function greet() {
-  console.log("hi");
-}
+// function greet() {
+//   console.log("hi");
+// }
 
-function square(num) {
-  console.log(num * num);
-}
+// function square(num) {
+//   console.log(num * num);
+// }
 
-function sum(x, y) {
-  console.log(x + y);
-}
+// function sum(x, y) {
+//   console.log(x + y);
+// }
 
-function square(x) {
-  return x * x;
-  console.log("ALL DONE");
-}
+// function square(x) {
+//   return x * x;
+//   console.log("ALL DONE");
+// }
 
-function isValidPassword(password, username) {
-  if (password.length < 8) {
-    return falselse;
-  }
-  if (password.indexOf(" ") !== -1) {
-    return false;
-  }
-  if (password.indexOf(username) !== -1) {
-    return false;
-  }
-  return false;
-}
+// function isValidPassword(password, username) {
+//   if (password.length < 8) {
+//     return falselse;
+//   }
+//   if (password.indexOf(" ") !== -1) {
+//     return false;
+//   }
+//   if (password.indexOf(username) !== -1) {
+//     return false;
+//   }
+//   return false;
+// }
 
-function isValidPassword(password, username) {
-  if (password.length < 8) {
-    return falselse;
-  }
-  if (password.indexOf(" ") !== -1) {
-    return false;
-  }
-  if (password.indexOf(username) !== -1) {
-    return false;
-  }
-  return false;
-}
+// function isValidPassword(password, username) {
+//   if (password.length < 8) {
+//     return falselse;
+//   }
+//   if (password.indexOf(" ") !== -1) {
+//     return false;
+//   }
+//   if (password.indexOf(username) !== -1) {
+//     return false;
+//   }
+//   return false;
+// }
 
-function isValidPassword(password, username) {
-  if (
-    password.length < 8 ||
-    password.indexOf(" ") !== -1 ||
-    password.indexOf(username) !== -1
-  ) {
-    return false;
-  }
-  return true;
-}
+// function isValidPassword(password, username) {
+//   if (
+//     password.length < 8 ||
+//     password.indexOf(" ") !== -1 ||
+//     password.indexOf(username) !== -1
+//   ) {
+//     return false;
+//   }
+//   return true;
+// }
 
-AVERAGE
+// AVERAGE
 
-function avg(arr) {
-  let total = 0;
+// function avg(arr) {
+//   let total = 0;
 
-  for (let num of arr) {
-    total += num;
-  }
-  return total / arr.length;
-}
+//   for (let num of arr) {
+//     total += num;
+//   }
+//   return total / arr.length;
+// }
 
-PANGRAMS
+// PANGRAMS
 
-function isPangram(sentence) {
-  sentence.toLowerCased = sentence.toLowerCase();
-  for (let char of "abcdefghijklmnopqrstuvwxyz") {
-    if (lowerCased.indexOf(char) == -1) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isPangram(sentence) {
+//   sentence.toLowerCased = sentence.toLowerCase();
+//   for (let char of "abcdefghijklmnopqrstuvwxyz") {
+//     if (lowerCased.indexOf(char) == -1) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-SCOPE
+// SCOPE
 
-functionlol();
-{
-  let person = "Tom";
-  const age = 45;
-  var color = "teal";
-  console.log(age);
-}
+// functionlol();
+// {
+//   let person = "Tom";
+//   const age = 45;
+//   var color = "teal";
+//   console.log(age);
+// }
 
-BLOCK SCOPE
+// BLOCK SCOPE
 
-if (true) {
-  var animal = "eel";
-  console.log(animal);
-}
-console.log(animal);
+// if (true) {
+//   var animal = "eel";
+//   console.log(animal);
+// }
+// console.log(animal);
 
-LEXICAL SCOPE
+// LEXICAL SCOPE
 
-function outer() {
-  let movie = "Amadeus";
+// function outer() {
+//   let movie = "Amadeus";
 
-  function inner() {
-    let movie = "The Shining";
+//   function inner() {
+//     let movie = "The Shining";
 
-    function extraInner() {
-      console.log(movie.toUpperCase());
-    }
-    extraInner();
-  }
-  inner();
-}
+//     function extraInner() {
+//       console.log(movie.toUpperCase());
+//     }
+//     extraInner();
+//   }
+//   inner();
+// }
 
-FUNCTION EXPRESSION
+// FUNCTION EXPRESSION
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// const sum = function (x, y) {
+//   return x + y;
+// };
+
+// HIGHER ORDER FUNCTION
 
 function add(x, y) {
   return x + y;
 }
 
-const sum = function (x, y) {
+function subtract(x, y) {
+  return x - y;
+}
+
+function multiply(x, y) {
+  return x * y;
+}
+
+function divide(x, y) {
+  return x / y;
+}
+
+const operations = [add, subtract, multiply, divide];
+
+// EXAM
+
+// write a traditional for loop that console.logs values from 1-10
+for (i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// create a new array from the fruits array. Loop through the array and remove the first letter from each element
+const fruits = ["apples", "oranges", "pears"];
+const newFruits = [];
+console.log(newFruits);
+
+for (let i of fruits) {
+  console.log(i.substring(1));
+  newFruits.push(i.substring(1));
+}
+console.log(newFruits);
+
+// create a function that takes two numbers as function parameters and returns the sum of those two numbers
+
+function add(x, y) {
   return x + y;
-};
+}
+// what is hoisting?
+console.log(add(2, 3));
+// what is the difference between a while loop and a forEeach?
