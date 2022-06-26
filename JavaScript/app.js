@@ -204,39 +204,77 @@ for (let i of fruits) {
 }
 console.log(newFruits);
 
+// FUNCTION AS ARGUEMENTS
+
+function callTwice(f) {
+  console.log(123);
+}
+
+function multiplyBy(num) {
+  return function () {
+    console.log("HI!!");
+  };
+}
+
+// FUNCTION AS RETURN VALUES
+
+function multiplyBy(num) {
+  return function (x) {
+    return x * num;
+  };
+}
+
+const triple = multiplyBy(3);
+const double = multiplyBy(2);
+
+// CALL BACKS
+
+setTimeout(function () {
+  alert("WELCOME");
+}, 5000);
+
+// HOISTING
+
+console.log(animal);
+var animal = "lion";
+console.log(animal);
+
+let shrimp = "Harlequin shrimp";
+console.log(shrimp);
+
 // create a function that takes two numbers as function parameters and returns the sum of those two numbers
 
-function add(x, y) {
-  return x + y;
-}
-// what is hoisting?
-console.log(add(2, 3));
-// what is the difference between a while loop and a forEeach?
+// function add(x, y) {
+//   return x + y;
+// }
+// // what is hoisting?
+// console.log(add(2, 3));
+// // what is the difference between a while loop and a forEeach?
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-}
+// function fun1() {
+//   // Assign 5 to oopsGlobal Here
+// }
 
-// Only change code above this line
+// // Only change code above this line
 
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
+// function fun2() {
+//   var output = "";
+//   if (typeof myGlobal != "undefined") {
+//     output += "myGlobal: " + myGlobal;
+//   }
+//   if (typeof oopsGlobal != "undefined") {
+//     output += " oopsGlobal: " + oopsGlobal;
+//   }
+//   console.log(output);
+// }
 
-function myLocalScope() {
-  // Only change code below this line
+// function myLocalScope() {
+//   // Only change code below this line
 
-  console.log("inside myLocalScope", myVar);
-}
-myLocalScope();
+//   console.log("inside myLocalScope", myVar);
+// }
+// myLocalScope();
 
-// Run and check the console
-// myVar is not defined outside of myLocalScope
-console.log("outside myLocalScope", myVar);
+// // Run and check the console
+// // myVar is not defined outside of myLocalScope
+// console.log("outside myLocalScope", myVar);
