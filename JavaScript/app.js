@@ -305,19 +305,97 @@ const acsSort = prices.sort((a,b) => a - b);
 const desSort = prices.sort((a,b) => b - a);
 
 // REDUCE 
+// multiple values into one value 
+
 
 const nums = [3 , 4, 5, 6 ,7];
 const product = nums.reduce((total , currentVal) => {
   return total * currentVal ;
 });
 
-total                         currentVal
-  3                               4
-  12                              5
-  60                              6 
+const maxGrade = grades.reduce((max , currtVal) => {
+  return Math.max(max, currtVal)
+});
+
+const minGrade = grades.reduce((min , currtVal) => {
+  return Math.min(min, currtVal)
+});
 
 
-  
+total              currVal           return
+  32                   92                49
+  12                   83                53
+  60                   38                67
+
+
+
+// DEFAULT PARAMETERS
+
+function multiply(x,y){
+if (typeof y === 'undefined'){
+  y = 1;
+}
+  return x * y ;
+}
+
+function multiply(a,b = 1){
+  return a * b ;
+}
+
+
+// SPREAD 
+
+const nums = [9,3,4,8];
+Math.max(nums);
+
+Math.max(...nums);
+
+const colors =['red', 'yellow', 'green', 'orange']
+
+
+// SPREAD IN ARRAY 
+
+const nums1 = [1,2,3]
+const nums2 = [4,5,6]
+
+[...nums1 , ...nums2] . split('') used for spliting 
+
+
+// SPREAD IN OBJECT 
+
+const feline = {
+  legs:4,
+  family : 'felidae'
+};
+
+const canine = {
+  family: 'caninae',
+  furry:true ,
+  legs;4
+};
+
+const dog = {... canine , isPet : true};
+
+
+// REST 
+
+function SubmitEvent() {
+const argsArr = [...arguments]
+return argsArr.reduce((total , currVal) =>{
+  return total + currVal
+} )
+}
+
+
+// REST PARAMS 
+
+function sum(...nums){
+  return nums.reduce((total , currVal ) => {
+    return total + currVal
+  })
+}
+
+
 // create a function that takes two numbers as function parameters and returns the sum of those two numbers
 
 // function add(x, y) {
