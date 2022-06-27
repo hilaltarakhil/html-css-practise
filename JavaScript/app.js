@@ -242,6 +242,55 @@ console.log(animal);
 let shrimp = "Harlequin shrimp";
 console.log(shrimp);
 
+// SECTION 10
+// FOR EACH
+
+const number = [1, 2, 3, 4, 5];
+
+number.foreach(function (num) {
+  console.log(num * 2);
+});
+
+// MAP
+
+const text = ['lol' , 'omg'];
+const caps = text.map (fuction (t){
+  return: t.toUpperCase ();
+} )
+
+// ARROW FUNCTION INTRO 
+
+const square = (x) => {
+  return x * y ;
+}
+
+// IMPLICIT RETURNS 
+
+const square = n => (
+  n * n 
+)
+
+const square = n => n * n ; 
+
+
+// ARRYA FIND 
+
+let movies = [
+  "MAN" , "WOMAN" , "DOG"
+]
+const movie = movies.find (movies => {
+  return movie.include ('DOG')
+}) 
+
+// FILTER 
+
+const nums = [34 ,35 ,36 , 37 , 38];
+
+const odds =nums.filter(n => n % 2 ===1)
+
+
+
+
 // create a function that takes two numbers as function parameters and returns the sum of those two numbers
 
 // function add(x, y) {
