@@ -288,9 +288,36 @@ const nums = [34 ,35 ,36 , 37 , 38];
 
 const odds =nums.filter(n => n % 2 ===1)
 
+// SOME AND EVERY 
+
+const words = ["dog" , "bag" , "dig"]
+
+const all3LETs = words.every(word => word.length ===3 )
 
 
+// REVISITING SORT 
 
+const prices = [400.50 , 3000 , 99.99 , 35.99 , 12.00 , 9500]
+
+prices.sort();
+
+const acsSort = prices.sort((a,b) => a - b);
+const desSort = prices.sort((a,b) => b - a);
+
+// REDUCE 
+
+const nums = [3 , 4, 5, 6 ,7];
+const product = nums.reduce((total , currentVal) => {
+  return total * currentVal ;
+});
+
+total                         currentVal
+  3                               4
+  12                              5
+  60                              6 
+
+
+  
 // create a function that takes two numbers as function parameters and returns the sum of those two numbers
 
 // function add(x, y) {
