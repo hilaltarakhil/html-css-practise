@@ -395,6 +395,55 @@ function sum(...nums){
   })
 }
 
+// DESTRUCTURING 
+// ARRAYS
+
+const raceResults = [
+  'salar',
+  'hilal',
+  'lemarzala',
+  'rustam',
+  'milad'
+];
+
+const [silver,gols,bronze] = raceResults ;
+const [first ,,,fourth] = raceResults;
+const [winner , ...others] = raceResults;
+
+
+// OBJECTS 
+const runner ={
+  first: "salar",
+  last: "tarakhil",
+  cuntry: "afghanistan"
+  title: "best runner"
+}
+
+const {
+  fisrt , 
+  last ,
+   ...other 
+  } = runner ;
+
+  // NESTED 
+
+  const [,{country}] = results ;
+
+  const  [{
+    first : goldWinner
+  } ,{
+    country 
+ }] results ;
+
+
+//  PARAMETERS 
+
+const fullName = ({first , last}) => {
+  return 
+}
+
+  
+
 
 // create a function that takes two numbers as function parameters and returns the sum of those two numbers
 
@@ -432,3 +481,30 @@ function sum(...nums){
 // // Run and check the console
 // // myVar is not defined outside of myLocalScope
 // console.log("outside myLocalScope", myVar);
+
+
+// EXAM
+const fruits = ['pear', 'apple', 'orange'];
+const numbers = [1,2,3,4,5]
+
+
+function findFruit(arr, fruit) {
+    // use find method
+  
+  const foundFruit = arr.find(f => f === fruit) 
+  return foundFruit
+  
+}
+console.log(findFruit(fruits, 'apple')) // pear
+
+
+function filterNumbers(arr) {
+  // use filter
+}
+console.log(filterNumbers(numbers)) // 4,5
+
+function total(arr) {
+   // your code here
+   // use reduce
+}
+console.log(total([1,2,3])); // 6
