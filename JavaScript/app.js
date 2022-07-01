@@ -509,3 +509,6 @@ function total(arr) {
 }
 console.log(total([1,2,3])); // 6
 
+const fruits = ['apples', 'oranges', 'pears'];
+const newFruits = fruits;
+console.log(newFruits);
