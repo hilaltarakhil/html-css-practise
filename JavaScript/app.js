@@ -442,6 +442,33 @@ const fullName = ({first , last}) => {
   return 
 }
 
+const runner = {
+first: "salar",
+last: "tarakhil",
+title:"fast runner"
+}
+
+function print (person){
+  first,last,title
+  console.log('${frist} ${last} ${title}'
+  )
+}
+
+const numbers = [20,21,23]
+numbers.forEach(function (num){
+  console.log(num * 2);
+})
+
+const numbers = [20,21,22,23];
+
+const doubles = numbers.map(function (num){
+  return num * 2 ;
+  
+})
+
+
+
+
   
 
 
