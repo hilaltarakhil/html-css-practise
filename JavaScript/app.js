@@ -512,3 +512,19 @@ console.log(total([1,2,3])); // 6
 const fruits = ['apples', 'oranges', 'pears'];
 const newFruits = fruits;
 console.log(newFruits);
+
+
+// PRACTICE
+
+function isValidPassword(password, username) {
+  if (password.length < 8) {
+    return false;
+  }
+  if (password.indexOf(" ") !== -1) {
+    return false;
+  }
+  if (password.indexOf(username) !== -1) {
+    return false;
+  }
+  return true;
+}
