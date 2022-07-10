@@ -570,3 +570,4 @@ const math = {
 // To execute multiply:
 math.multiply(5, 9); //45
 
+math.multiply(23,56);
