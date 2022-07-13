@@ -573,3 +573,5 @@ math.multiply(5, 9); //45
 math.multiply(23,56);
 
 math.add(5,10);
+
+math.add(6,7);
