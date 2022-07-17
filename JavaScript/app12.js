@@ -6,6 +6,13 @@ const person = "jools holland";
 const team = {};
 team[role] = person;
 
+const role = "guest";
+const person = "Salar Tarakhil";
+
+const team = {};
+team[role] = person;
+
+
 
 function SayHi({
   console.log("HI")
@@ -18,3 +25,4 @@ function Saybye({
 
   console.log(this);
 })
+
