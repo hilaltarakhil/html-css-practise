@@ -210,6 +210,10 @@ function callTwice(f) {
   console.log(123);
 }
 
+function callThrice(f) {
+  console.log(456);
+}
+
 function multiplyBy(num) {
   return function () {
     console.log("HI!!");
