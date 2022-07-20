@@ -206,7 +206,12 @@ console.log(newFruits);
 
 // FUNCTION AS ARGUEMENTS
 
+function callThrice(f){
+  console.log(123);
+}
+
 function callTwice(f) {
+
   console.log(123);
 }
 
