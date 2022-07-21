@@ -235,6 +235,7 @@ function multiplyBy(num) {
 
 const triple = multiplyBy(3);
 const double = multiplyBy(2);
+const add = multiplyBy(4);
 
 // CALL BACKS
 
