@@ -233,6 +233,12 @@ function multiplyBy(num) {
   };
 }
 
+function dividedBy(num) {
+  return function (x) {
+    return x / num;
+  };
+}
+
 const triple = multiplyBy(3);
 const double = multiplyBy(2);
 const add = multiplyBy(4);
