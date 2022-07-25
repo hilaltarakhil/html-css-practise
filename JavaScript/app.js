@@ -258,6 +258,13 @@ console.log(animal);
 let shrimp = "Harlequin shrimp";
 console.log(shrimp);
 
+console.log(animal);
+var animal = "lion";
+console.log(animal);
+
+let lion = "white lion";
+console.log(shrimp);
+
 // SECTION 10
 // FOR EACH
 
