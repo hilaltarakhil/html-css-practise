@@ -272,6 +272,14 @@ const number = [1, 2, 3, 4, 5];
 
 number.foreach(function (num) {
   console.log(num * 2);
+
+
+});
+
+const num = [1, 2, 3, 4, 5];
+
+number.foreach(function (num) {
+  console.log(num - 2);
 });
 
 // MAP
