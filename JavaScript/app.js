@@ -289,6 +289,11 @@ const caps = text.map (fuction (t){
   return: t.toUpperCase ();
 } )
 
+const text = ['ASAP' , 'COMEON'];
+const caps = text.map (fuction (s){
+  return: s.toLowerCAse ();
+} )
+
 // ARROW FUNCTION INTRO 
 
 const square = (x) => {
