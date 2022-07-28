@@ -298,7 +298,14 @@ const caps = text.map (fuction (s){
 
 const square = (x) => {
   return x * y ;
+
+
+
+
 }
+
+const multiple = (x) => {
+  return x * y ;
 
 // IMPLICIT RETURNS 
 
