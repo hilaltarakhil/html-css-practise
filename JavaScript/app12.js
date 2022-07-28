@@ -26,3 +26,13 @@ function Saybye({
   console.log(this);
 })
 
+// CALL BACKS HELLS 
+
+condt btn = document.querySelrctor ('button')
+setTimeout (() = {
+  btn.style.transform = 'trnaslate(100px)';
+  setTimeout (() = {
+    btn.style.transform = 'trnaslate(200px)';
+
+  }, 2000);
+},3000);

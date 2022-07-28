@@ -310,7 +310,7 @@ const multiple = (x) => {
 // IMPLICIT RETURNS 
 
 const square = n => (
-  n * n 
+  n * n   `23434
 )
 
 const square = n => n * n ; 
