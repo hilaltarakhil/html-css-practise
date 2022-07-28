@@ -36,3 +36,11 @@ setTimeout (() = {
 
   }, 2000);
 },3000);
+
+
+<name>
+  <first>salar</first>
+  <last>Tarakhil</last>
+</name>
+<email>salar@gmail.com</email>
+
