@@ -26,6 +26,19 @@ function Saybye({
   console.log(this);
 })
 
+function greets ({
+  console.log("HELLO")
+
+  console.log(this);
+})
+
+function END({
+  console.log("THE END ")
+
+  console.log(this);
+})
+
+
 // CALL BACKS HELLS 
 
 condt btn = document.querySelrctor ('button')
