@@ -193,6 +193,10 @@ for (i = 1; i <= 10; i++) {
   console.log(i);
 }
 
+for (i = 10; i <= 100; i++) {
+  console.log(i);
+}
+
 // create a new array from the fruits array. Loop through the array and remove the first letter from each element
 const fruits = ["apples", "oranges", "pears"];
 const newFruits = [];
