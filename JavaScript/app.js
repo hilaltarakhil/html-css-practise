@@ -622,3 +622,11 @@ math.multiply(23,56);
 math.add(5,10);
 
 math.add(6,7);
+
+math.multiply(3, 9); //27
+
+math.multiply(17,56);
+
+math.add(5,10);15
+
+math.add(6,7);13
