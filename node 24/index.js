@@ -1,3 +1,3 @@
-const message = require("./myscript.js");
+require("./myscript.js");
 
-console.log("message");
+console.log(requir.cache);
