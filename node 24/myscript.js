@@ -1,3 +1,10 @@
-const message = "hi there";
+let counter = 0;
 
-module.experts = message;
+module.exports = {
+  incermentCounter() {
+    counter = counter + 1;
+  },
+  getCounter() {
+    return counter;
+  },
+};
