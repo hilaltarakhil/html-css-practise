@@ -8,9 +8,7 @@ const newCounterObject = require("./myscript.js");
 
 console.log(newCounterObject.getCounter());
 
-
 // NODE
-
 
 const fs = require("fs");
 
@@ -27,3 +25,18 @@ fs.readdir(process.cwd(), (err) => {
       if (err) {
         console.log(err);
       }
+
+      allStats[index] = stats;
+
+      const ready = allStats.every((stats) => {
+        return stats;
+      });
+
+      if (ready) {
+        allStats.forEach((stats, index) => {
+          console.log(filename[index], stats.isFile());
+        });
+      }
+    });
+  }
+});
